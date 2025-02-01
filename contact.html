@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#E9E2D2]">
+    <header>
+      <div
+        class="p-2 flex w-full h-[40px] sm:h-[60px] text-[#3B7A9D] fixed top-0 right-0 left-0 z-50 pt-[10px] bg-white justify-between items-center text-[12px] font-semibold sm:text-[25px]"
+      >
+        <a href="/index.html">
+          <p
+            class="text-[20px] sm:text-[35px] hover:text-[#3B619D] text-black primaryFont"
+          >
+            AstroByte
+          </p>
+        </a>
+        <div class="flex justify-end space-x-4">
+          <a href="/about.html">
+            <p class="hover:text-black">About</p>
+          </a>
+          <a href="/contact.html">
+            <p class="hover:text-black">Contact</p>
+          </a>
+        </div>
+      </div>
+
+      <div
+        id="alertDiv"
+        class="hidden text-center rounded-md fixed p-5 text-xl top-[60px] sm:top-[100px] right-[20px] left-[20px] bg-[#3B7A9D] text-white z-50"
+      ></div>
+    </header>
+    <div class="mt-[30px] flex justify-center p-[50px]">
+      <div
+        class="flex flex-col items-center text-center mt-[14px] sm:mt-[22px] w-[342px] h-[77px] sm:w-[548px] sm:h-[136px] primaryFont"
+      >
+        <p class="text-[50px] sm:text-[80px] text-[#3B7A9D]">
+          Contact Us
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="rounded-md p-5 flex items-center justify-center bg-gray-300"
+    >
+      <form
+        id="messageForm"
+        class="relative flex flex-col w-[344px] sm:w-[300px] md:w-[400px] lg:w-[500px] text-[15px] sm:text-[25px]"
+      >
+        <label class="text-[#006039]" for="fullName">Full Name *</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          class="rounded-md p-2"
+        />
+
+        <label class="mt-[10px] text-[#006039]" for="email">Email *</label>
+        <input type="text" name="email" id="email" class="rounded-md p-2" />
+
+        <label class="mt-[10px] text-[#006039]" for="message">Message *</label>
+        <textarea
+          rows="3"
+          name="message"
+          id="message"
+          class="rounded-md p-2"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="relative mt-[10px] bg-[#3B7A9D] text-white rounded-md p-2 hover:bg-blue-600"
+        >
+          Submit
+          <div
+            id="submitSpinner"
+            class="hidden absolute top-[7px] right-[10px] sm:right-[20px] h-4 w-4 sm:h-6 sm:w-6 animate-spin rounded-full border-b-2 border-current"
+          ></div>
+        </button>
+      </form>
+    </div>
+
+    <!-- Map Section-->
+    <div class="flex justify-center items-center min-h-screen bg-gray-50 p-2">
+      <div class="aspect-w-16 aspect-h-9 w-full max-w-4xl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1994.9042122466417!2d37.71790238197944!3d0.1276108815448456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1738317990793!5m2!1sen!2ske"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- End of map section-->
+
+        <!--  Footer  -->
+      
+        <footer class="bg-[#D3CFC5]">
+          <div class="p-[20px]  grid grid-cols-3">
+            <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="#">Patners</a>
+          <a href="#">Projects</a>
+          <a href="#">Team</a>
+        </div>
+          <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="https://x.com/saddamLSC" target="_blank">X/Twitter</p></a>
+          <a href="https://github.com/SaddamTechie" target="_blank"><p>Github</p></a>
+          <a href="https://www.linkedin.com/in/saddamlsc" target="_blank"><p>LinkedIn</p></a>
+          </div>
+          </div>
+        <div class="mt-[50px] mb-[10px] sm:mt-[100px] flex justify-center text-[15px] sm:text-[20px]">
+          Made with<span>&nbsp;&#10084;&#65039;&nbsp;</span> by <a href="https://github.com/SaddamTechie"><span class="text-[#3B7A9D] font-semibold">&nbsp;AstroByte</span></a>.
+        </div>
+        </footer>
+        <!--  End of Footer-->
+    <script type="module" src="/assets/js/script.js"></script>
+  </body>
+</html>

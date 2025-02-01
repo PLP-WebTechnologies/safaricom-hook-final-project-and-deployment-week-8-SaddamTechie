@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#E9E2D2]">
+    <header>
+      <div
+        class="p-2 flex w-full h-[40px] sm:h-[60px] text-[#3B7A9D] fixed top-0 right-0 left-0 z-50 pt-[10px] bg-white justify-between items-center text-[12px] font-semibold sm:text-[25px]"
+      >
+        <a href="/index.html">
+          <p
+            class="text-[20px] sm:text-[35px] hover:text-[#3B619D] text-black primaryFont"
+          >
+            AstroByte
+          </p>
+        </a>
+        <div class="flex justify-end space-x-4">
+          <a href="/about.html">
+            <p class="hover:text-black">About</p>
+          </a>
+          <a href="/contact.html">
+            <p class="hover:text-black">Contact</p>
+          </a>
+        </div>
+      </div>
+
+      <div
+        id="alertDiv"
+        class="hidden text-center rounded-md fixed p-5 text-xl top-[60px] sm:top-[100px] right-[20px] left-[20px] bg-[#3B7A9D] text-white"
+      ></div>
+    </header>
+    <!--  About -->
+    <div class="mt-[30px] flex justify-center p-[50px] h-[400px]">
+      <div
+        class="flex flex-col items-center text-center mt-[14px] sm:mt-[22px] w-[342px] h-[77px] sm:w-[548px] sm:h-[136px] primaryFont"
+      >
+        <p class="text-[50px] sm:text-[80px] leading-[56px] text-[#3B7A9D]">
+          About Us
+        </p>
+        <br />
+        <div class="text-[15px] sm:text-[25px] text-[#747171] mt-[20px] w-full">
+          Founded in 2022, AstroByte began as a small team of passionate
+          developers seeking to solve complex problems through technology. Over
+          the years, we have grown into a trusted partner for businesses looking
+          to enhance their digital capabilities.
+        </div>
+      </div>
+    </div>
+    <!-- End of about -->
+
+    <!--                          Team Section                         -->
+    <section id="team">
+      <div class="mt-[34px] sm:mt-[83px] sm:mt-[104px]">
+        <h3
+          class="primaryFont text-center text-[20px] sm:text-[50px] text-[#3B7A9D]"
+        >
+          AstroByte Team
+        </h3>
+        <div
+          id="teamContainer"
+          class="mt-[11px] sm:mt-[25px] grid grid-cols-2 sm:grid-cols-3 gap-x-[20px] gap-y-[20px] sm:gap-[50px]"
+        >
+          <!-- Expertise LoadingSkeleton-->
+          <div
+            class="teamSkeleton relative bg-white h-[153px] sm:h-[250px] sm:w-[354px] animate-pulse rounded-md shadow-lg px-[2px] sm:px-[10px] rounded-md"
+          >
+            <div class="mt-[10px] h-4 bg-gray-200"></div>
+            <div
+              class="w-[153px] h-[104px] sm:w-[334px] sm:h-[180px] bg-gray-200 mt-2"
+            ></div>
+          </div>
+
+          <div
+            class="teamSkeleton relative bg-white h-[153px] sm:h-[250px] sm:w-[354px] animate-pulse rounded-md shadow-lg px-[2px] sm:px-[10px] rounded-md"
+          >
+            <div class="mt-[10px] h-4 bg-gray-200"></div>
+            <div
+              class="w-[153px] h-[104px] sm:w-[334px] sm:h-[180px] bg-gray-200 mt-2"
+            ></div>
+          </div>
+
+          <div
+            class="teamSkeleton relative bg-white h-[153px] sm:h-[250px] sm:w-[354px] animate-pulse rounded-md shadow-lg px-[2px] sm:px-[10px] rounded-md"
+          >
+            <div class="mt-[10px] h-4 bg-gray-200"></div>
+            <div
+              class="w-[153px] h-[104px] sm:w-[334px] sm:h-[180px] bg-gray-200 mt-2"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  More Questions about me-->
+    <div id="moreQuiz" class="mt-[50px]">
+      <h3
+        class="primaryFont text-center text-[20px] sm:text-[50px] mb-[10px] text-[#3B7A9D]"
+      >
+        Frequently asked Questions
+      </h3>
+      <div
+        id="questionsContainer"
+        class="pl-[10px] flex flex-col gap-y-[10px] w-[344px] sm:w-[1100px] text-[15px] sm:text-[25px]"
+      >
+        <!-- Quiz Skeleton -->
+        <div class="quizSkeleton relative bg-white rounded-md animate-pulse">
+          <div class="p-[10px] sm:p-[20px] h-6 bg-gray-200 rounded-md"></div>
+        </div>
+
+        <div class="quizSkeleton relative bg-white rounded-md animate-pulse">
+          <div class="p-[10px] sm:p-[20px] h-6 bg-gray-200 rounded-md"></div>
+        </div>
+
+        <!--  End of Quiz Skeleton-->
+      </div>
+    </div>
+
+        <!--  Footer  -->
+      
+        <footer class="bg-[#D3CFC5]">
+          <div class="p-[20px] sm:mt-[100px] grid grid-cols-3">
+            <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="#">Patners</a>
+          <a href="#">Projects</a>
+          <a href="#">Team</a>
+        </div>
+          <div
+            class="mt-[50px]  text-[12px] sm:text-[20px] flex flex-col justify-evenly"
+          >
+          <a href="https://x.com/saddamLSC" target="_blank">X/Twitter</p></a>
+          <a href="https://github.com/SaddamTechie" target="_blank"><p>Github</p></a>
+          <a href="https://www.linkedin.com/in/saddamlsc" target="_blank"><p>LinkedIn</p></a>
+          </div>
+          </div>
+        <div class="mt-[50px] mb-[10px] sm:mt-[100px] flex justify-center text-[15px] sm:text-[20px]">
+          Made with<span>&nbsp;&#10084;&#65039;&nbsp;</span> by <a href="https://github.com/SaddamTechie"><span class="text-[#3B7A9D] font-semibold">&nbsp;AstroByte</span></a>.
+        </div>
+        </footer>
+        <!--  End of Footer-->
+    <script type="module" src="/assets/js/script.js"></script>
+  </body>
+</html>
